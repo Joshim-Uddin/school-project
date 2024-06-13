@@ -37,6 +37,9 @@
   width: 100%;
   margin: 0 auto;
 }
+.wrapper li{
+  padding: 10px 15px;
+}
 body{
   font-family: 'Kalpurush', sans-serif;
   font-weight: 400;
@@ -44,14 +47,53 @@ body{
 .heading{
   text-shadow: -1px -1px 10px #333, 1px -1px 10px #333, -1px 1px 10px #333, 1px 1px 10px #333;
 }
+.submenu{
+  position: absolute;
+  left: -800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  background: #fff;
+  box-shadow: 5px 5px 5px 5px #999;
+  border-radius: 5px;
+  padding: 0 10px;
+  
+}
+.about:hover .submenu{
+  position: absolute;
+  top: 50px;
+  left: 120px; 
+  z-index: 30;  
+}
+.officesubmenu{
+  position: absolute;
+  left: -800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  background: #fff;
+  box-shadow: 5px 5px 5px 5px #999;
+  border-radius: 5px;
+  padding: 0 10px;
+  
+}
+.offices:hover .officesubmenu{
+  position: absolute;
+  top: 50px;
+  left: 400px; 
+  z-index: 30; 
+}
 @media only screen and (min-width: 960px){
   body{
     background: url("../src/assets/bg_main.gif");
+    margin: 0 auto;
+    background-size: cover;
   }
   .wrapper{
     width: 67%;
     margin: 0 auto;
-    padding-left: 1.25rem;
   }
 }
 /* :root {

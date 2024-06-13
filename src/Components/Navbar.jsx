@@ -4,21 +4,46 @@ import { FaBars, FaHome } from "react-icons/fa";
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false)
-    console.log(openMenu)
     return (
-        <div className="wrapper">
+        <div className="wrapper relative">
             <ul className="flex items-center md:gap-8 px-2  py-2 shadow-sm bg-[#FAFAFA] max-[600px]:hidden">
                 <li>
                     <a href="/"><FaHome className="text-2xl"/></a>
                 </li>
-                <li>
+                <li className="about">
                     <a href="/#">আমাদের সম্পর্কে</a>
+                    <ul className="submenu">
+                        <li>অফিস সম্পর্কিত
+                            <ul>
+                                <li><a href="">এক নজরে</a></li>
+                                <li><a href="">ভিশন ও মিশন</a></li>
+                                <li><a href="">আমাদের অর্জনসমূহ</a></li>
+                                <li><a href="">সাম্প্রতিক কর্মকান্ড</a></li>
+                                <li><a href="">ভবিষ্যত পরিকল্পনা</a></li>
+                                <li><a href="">ঘটনাপুঞ্জ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            জনবল
+                            <ul>
+                                <li><a href="">প্রধান শিক্ষক</a></li>
+                                <li><a href="">প্রাক্তন প্রধান শিক্ষকগণ</a></li>
+                                <li><a href="">সহকারী শিক্ষকগণ</a></li>
+                                <li><a href="">কর্মচারীগণ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="/#">আমাদের সেবা</a>
                 </li>
-                <li>
+                <li className="offices">
                     <a href="/#">কার্যালয়সমূহ</a>
+                    <ul className="officesubmenu">
+                        <li><a href="http://eo.daulatpur.kushtia.gov.bd/">উপজেলা শিক্ষা অফিস</a></li>
+                        <li><a href="https://dpe.kushtia.gov.bd/">জেলা প্রাথমিক শিক্ষা অফিস</a></li>
+                        <li><a href="https://www.dpe.gov.bd/">প্রাথমিক শিক্ষা অধিদপ্তর</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="/gallery">গ্যালারী</a>
