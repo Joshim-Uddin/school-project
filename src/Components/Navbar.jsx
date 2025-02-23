@@ -6,11 +6,14 @@ const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false)
     return (
         <div className="wrapper relative">
-            <ul className="flex items-center md:gap-8 px-2  py-2 shadow-sm bg-[#FAFAFA] max-[600px]:hidden">
+            <ul className="flex items-center px-2  py-2 shadow-sm bg-[#FAFAFA] max-[600px]:hidden">
                 <li>
                     <a href="/"><FaHome className="text-2xl"/></a>
                 </li>
-                <li className="about">
+                <li className="hover:bg-[#C40A2A] hover:text-white hover:font-bold">
+                    <a href="/">প্রথম পাতা</a>
+                </li>
+                <li className="about ">
                     <a href="/#">আমাদের সম্পর্কে</a>
                     <ul className="submenu">
                         <li>অফিস সম্পর্কিত
@@ -26,7 +29,7 @@ const Navbar = () => {
                         <li>
                             জনবল
                             <ul>
-                                <li><a href="">প্রধান শিক্ষক</a></li>
+                                <li><a href="/headmaster">প্রধান শিক্ষক</a></li>
                                 <li><a href="">প্রাক্তন প্রধান শিক্ষকগণ</a></li>
                                 <li><a href="">সহকারী শিক্ষকগণ</a></li>
                                 <li><a href="">কর্মচারীগণ</a></li>

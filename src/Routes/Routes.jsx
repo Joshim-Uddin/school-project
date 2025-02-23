@@ -4,6 +4,7 @@ import Home from '../Pages/Home';
 import Contact from '../Pages/Contact';
 import Review from '../Pages/Review';
 import Gallery from '../Pages/Gallery';
+import HeadMaster from '../Pages/HeadMaster';
 const router = createBrowserRouter([
     {
         path:"/",
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
             {
                 path:"/gallery",
                 element: <Gallery />
+            },
+            {
+                path:"/headmaster",
+                element: <HeadMaster />
             }
         ]
     }

@@ -60,11 +60,17 @@ body{
   padding: 0 10px;
   
 }
+.about:hover{
+  background-color:#84154D;
+  color: #fff;
+  font-weight: 800;
+}
 .about:hover .submenu{
   position: absolute;
   top: 50px;
   left: 120px; 
-  z-index: 30;  
+  z-index: 30;
+  color: #000;  
 }
 .officesubmenu{
   position: absolute;
